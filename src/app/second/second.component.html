@@ -1,0 +1,9 @@
+<p>Je suis le second component avec la couleur {{ color() }}</p>
+<p>Je suis le second component avec l'ancienne couleur {{ exColor }}</p>
+<!-- 
+<button (click)="changeExColorFromChild()">change ex color</button>
+<button (click)="changeColorFromChild()">change color</button> -->
+
+<button (click)="sendToParent.emit('message de la part du child')">
+  Send To Parent
+</button>

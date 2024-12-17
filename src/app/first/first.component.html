@@ -1,0 +1,13 @@
+<p>Je suis le first Component</p>
+<ng-content></ng-content>
+<hr />
+<app-second
+  [exColor]="firstExColor"
+  [c]="firstColor"
+  (stp)="msg = $event"
+></app-second>
+
+<button (click)="changeExColor()">change ex color</button>
+<button (click)="changeColor()">change color</button>
+
+<h1>{{ msg }}</h1>
